@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    background-color: #0E2307;
+    font-family: "Open Sans Light";
+    font-size: 17px;
+    line-height: 1.6em;
+    margin:0;
+}
+
+.container{
+    width:100%;
+    margin-left:22%;
+
+    overflow:hidden;
+}
+
+.nav-container{
+    padding: 0;
+    margin-left:60%;
+    transform: translate(-50%);
+}
+
+#navbar{
+    position: fixed;
+    word-spacing: 90px;
+    width: 100%;
+    height: 6%;
+    background-color: #0E2307;
+}
+
+#navbar ul{
+    padding:0;
+    list-style: none;
+    /* left: 50%; */
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #F4FFE8;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    color: #ABFF00; 
+    text-decoration: none;
+}
+
+#navbar a:visited{
+    color: none;
+    text-decoration: none;
+}
+
+/* Figure out how to hover swap image */
+#navbar li:nth-child(3) {
+    position: relative;
+    display: inline-block;
+}
+
+#navbar li:nth-child(3) .linkhover, li:nth-child(4) .githover{
+    display: none;
+    position: absolute;
+}
+
+#navbar li:nth-child(3) .linkhover:hover{
+    display: inline;
+}
+/**/
+
+#main-header h1{
+    font: bold 131px "Open Sans";
+    color: #F4FFE8;
+    /* fontsize and fontfamily (last two) are necessary */
+    /* font-weight: bold;
+    font-size: 131px; */
+    margin: 64px 0 0 0;
+    padding: 256px 0 0 0; 
+}
+
+#home{
+    width: 100%;
+    height: 1016px;
+    background-color: #143109;
+
+}
+
