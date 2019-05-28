@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+* {margin:0;}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: none;
+    text-decoration: none;
+}
+
 body{
     background-color: #0E2307;
     font-family: "Open Sans Light";
@@ -8,17 +19,18 @@ body{
     margin:0;
 }
 
+/* Overflow only works if width/margin adds up? */
 .container{
-    width:100%;
+    width:78%;
     margin-left:22%;
-
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .nav-container{
-    padding: 0;
-    margin-left:60%;
-    transform: translate(-50%);
+    text-align: center;
+    /* padding: 0;
+    margin: auto;
+    width: 50%; */
 }
 
 #navbar{
@@ -30,7 +42,8 @@ body{
 }
 
 #navbar ul{
-    padding:0;
+    /* Padding to center inside navbar */
+    padding: .75em;
     list-style: none;
     /* left: 50%; */
 }
@@ -41,16 +54,10 @@ body{
 
 #navbar a{
     color: #F4FFE8;
-    text-decoration: none;
 }
 
 #navbar a:hover{
     color: #ABFF00; 
-    text-decoration: none;
-}
-
-#navbar a:visited{
-    color: none;
     text-decoration: none;
 }
 
@@ -71,14 +78,43 @@ body{
 /**/
 
 #main-header h1{
+    position: relative;
     font: bold 131px "Open Sans";
     color: #F4FFE8;
     /* fontsize and fontfamily (last two) are necessary */
     /* font-weight: bold;
     font-size: 131px; */
-    margin: 64px 0 0 0;
-    padding: 256px 0 0 0; 
+    margin: 256px 0 0 0;
 }
+
+#sub-header h2{
+    position: absolute;
+    font: bolder 48px "Open Sans";
+    color: #83C967;
+    margin-top: -.56em;
+    margin-left: 10px;
+}
+
+#about p{
+    display: inline-block;
+    margin-top: 4em;
+    margin-left: 10px;
+    margin-right: 0;
+    padding-right: 0; 
+    line-height: 1.25em;
+    color: #83C967; 
+}
+
+#about #resume {
+    margin-left: 95px;
+    padding: 12px 32px;
+    display: inline;
+    color: #ABFF00;
+    border: 2px solid #ABFF00;
+    border-radius: 8px;
+}
+
+
 
 #home{
     width: 100%;
