@@ -34,6 +34,8 @@ body{
 }
 
 #navbar{
+    /* Puts nav bar on top */
+    z-index: 9999;
     position: fixed;
     word-spacing: 90px;
     width: 100%;
@@ -114,12 +116,49 @@ body{
     border-radius: 8px;
 }
 
+#about #resume a:link, a:visited{
+    color: #ABFF00;
+}
 
 
 #home{
     width: 100%;
     height: 1016px;
     background-color: #143109;
-
 }
 
+#home2{
+    margin-top: 146px;
+}
+
+.sub-header{
+    display: inline-block;
+    font: bold 48px "Open Sans";
+    color: #F4FFE8;
+    margin-right: 62px;
+}
+
+.skills{
+    vertical-align: text-top;
+    margin-top: -40px;
+    display: inline-block;
+}
+
+/* .skills .design{
+    margin-left: 65px;
+} */
+
+.skills h3{
+    margin-left: 145px;
+    margin-bottom: 24px;
+    color: #F4FFE8;
+    font: lighter 17px "Open Sans Light";
+}
+
+.skills img{
+    margin-top: -22px;
+}
+
+.skills p{
+    color: #83C967;
+}
