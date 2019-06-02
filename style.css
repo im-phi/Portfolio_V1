@@ -172,6 +172,7 @@ body{
     float: left;
     margin-right: -6px;
     margin-top: -22px;
+    z-index: 0;
 }
 
 .skills p{
@@ -183,4 +184,18 @@ body{
     border-radius: 5px;
     padding: 6px 16px;
     margin: 0 30px 0 -15px;
+}
+
+.skills .development div{
+    float: left;
+    margin-left: -35px;
+    padding-left: 35px;
+    border-left: 1px solid #ABFF00;
+}
+
+.skills .design div{
+    float: left;
+    margin-left: -35px;
+    padding-left: 35px;
+    border-left: 1px solid #ABFF00;
 }
