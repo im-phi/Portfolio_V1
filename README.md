@@ -2,4 +2,9 @@
 
 This is a work-in-progress of my first personal portfolio website.
 
-Created with: HTML and CSS
+Designed with: Adobe Photoshop, Illustrator, and XD
+
+Built with: HTML and CSS
+
+
+Designed and built by Phi Hoang
