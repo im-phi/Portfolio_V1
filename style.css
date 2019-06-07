@@ -318,10 +318,6 @@ body{
 }
 
 @media only screen and (max-width: 591px){
-    body{
-        background-color: red;
-    }
-
     #main-header{
         font-size: .85em;
     }
