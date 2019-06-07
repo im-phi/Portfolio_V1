@@ -28,9 +28,6 @@ body{
 
 .nav-container{
     text-align: center;
-    /* padding: 0;
-    margin: auto;s
-    width: 50%; */
 }
 
 #navbar{
@@ -39,20 +36,34 @@ body{
     position: fixed;
     word-spacing: 90px;
     width: 100%;
-    height: 55px;
+    height: 50px;
     background-color: #0E2307;
     box-shadow: #0E2307;
 }
 
 #navbar ul{
     /* Padding to center inside navbar */
-    padding: .75em;
+    /* padding: .75em; */
+    display: inline-block;
     list-style: none;
     /* left: 50%; */
 }
 
 #navbar li{
     display: inline;
+}
+
+/* Used to position header elemends perfectly */
+#navbar li:nth-child(1){
+    position: relative;
+    top: -3px;
+}
+#navbar li:nth-child(2){
+    position: relative;
+    top: -3px;
+}
+#navbar li:nth-child(3){
+    padding-top: 14px;
 }
 
 #navbar a{
@@ -102,16 +113,16 @@ body{
     display: inline-block;
     margin-top: 4em;
     margin-left: 10px;
-    margin-right: 0;
-    padding-right: 0; 
     line-height: 1.25em;
     color: #83C967; 
 }
 
 #about #resume {
-    margin-left: 95px;
+    vertical-align: top;
+    margin-top: 5em;
+    margin-left: 40px;
     padding: 12px 32px;
-    display: inline;
+    display: inline-block;
     color: #ABFF00;
     border: 2px solid #ABFF00;
     border-radius: 8px;
@@ -206,6 +217,10 @@ body{
         font-size: .9em;
     }
 
+    #navbar{
+        font-size: 1em;
+    }
+
     .sub-header{
         /* display: inline-block; */
         font: bold 2.824em "Open Sans";
@@ -245,5 +260,95 @@ body{
 
     .skills .design{
         margin: 0 0 0 -2em;
+    }
+}
+
+@media only screen and (max-width: 950px){
+
+    .container{
+        width:80%;
+        margin-left:20%;
+        overflow: hidden;
+    }
+    
+
+    .skills{
+        display: flex;
+        flex-direction: row;
+        vertical-align: text-top;
+        margin: -90px 0 150px 100px;
+    }
+
+    .skills .development{
+        margin: 8em 0 4em 0;
+
+    }
+
+    .skills .design{
+        margin: 0 0 0 -2em;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .container{
+        width:85%;
+        margin-left:15%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .container{
+        width:92%;
+        margin-left:8%;
+        overflow: hidden;
+    }
+
+    .sub-header{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .container{
+        width:96%;
+        margin-left:4%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 591px){
+    body{
+        background-color: red;
+    }
+
+    #main-header{
+        font-size: .85em;
+    }
+    #about #resume{
+        margin: .7em 0 0 22em;
+    }
+
+    #sub-header{
+        font: bolder 1.1em "Open Sans";
+    }
+
+    #about p{
+        font: lighter 1.15em "Open Sans Light";
+    }
+
+    #home2{
+        margin-left: 0;
+    }
+    
+    .sub-header{
+        margin-left: 15px;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: row;
+        vertical-align: text-top;
+        margin: -90px 0 150px 80px;
     }
 }
