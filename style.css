@@ -295,6 +295,12 @@ body{
         margin-left:15%;
         overflow: hidden;
     }
+
+    @media only screen and (max-height: 1024px){
+        #home{
+            height: 870px;
+        }
+    }
 }
 
 @media only screen and (max-width: 750px){
@@ -346,5 +352,146 @@ body{
         flex-direction: row;
         vertical-align: text-top;
         margin: -90px 0 150px 80px;
+    }
+}
+
+@media only screen and (max-width: 499px){
+    /* Landing */
+    .container{
+        width: 95%;
+        margin-left: 5%;
+    }
+    #navbar{
+        word-spacing: 48px;
+    }
+
+    #navbar ul{
+        margin-left: -30px;
+    }
+
+    #main-header{
+        font-size: .68em;
+    }
+
+    #sub-header{
+        font-size: .87em;
+    }
+
+    .landing{
+        position: relative;
+        top: -95px;
+    }
+
+    #about p{
+        font-size: .96em;
+        margin-bottom: 40px;
+    }
+
+    #resume{
+        position: relative;
+        font-size: .9em;
+        left: -80px;
+    }
+
+    #home{
+        height: 640px;
+    }
+
+    /* Skills */
+    .sub-header{
+        font-size: 2em;
+        margin-left: 1.5em;
+    }
+    
+    .skills{
+        display: flex;
+        flex-direction: row;
+        vertical-align: text-top;
+        margin: -90px 0 150px 0;
+    }
+}
+
+@media only screen and (max-width: 375px){
+
+    .container{
+        width:96%;
+        margin-left:4%;
+        overflow: hidden;
+    }
+    
+    #main-header{
+        font-size: .6em;
+    }
+
+    #sub-header{
+        font-size: .8em;
+    }
+
+    .landing{
+        position: relative;
+        top: -95px;
+    }
+
+    #about p{
+        font-size: .87em;
+        margin-bottom: 40px;
+    }
+
+    #resume{
+        position: relative;
+        font-size: .9em;
+        left: -80px;
+    }
+
+    #home{
+        height: 640px;
+    }
+
+    /* Skills */
+
+    #home2{
+        margin-top: 100px;
+    }
+    
+    .skills{
+        display: flex;
+        flex-direction: row;
+        vertical-align: text-top;
+        margin: -90px 0 150px -25px;
+    }
+}
+
+@media only screen and (max-width: 374px){
+    #main-header{
+        font-size: .55em;
+    }
+
+    #sub-header{
+        font-size: .72em;
+    }
+
+    #about p{
+        font-size: .76em;
+        margin-bottom: 40px;
+    }
+
+    #resume{
+        position: relative;
+        font-size: .9em;
+        left: -120px;
+    }
+
+    /* Skills */
+    #home2 img{
+        opacity: .3;
+        padding: -50px;
+        margin-right: -40px;
+        z-index: 1;
+    }
+    .sub-header{
+        font-size: 1.6em;
+    }
+    .skills{
+        font-size: .85em;
     }
 }
