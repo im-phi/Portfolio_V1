@@ -1,28 +1,17 @@
 import { request } from "https";
 
-function smoothScroll(target, duration){
-    var target = document.querySelector(target);
-    var targetPosition = getBoundingClientRect().top;
-    var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition;
-    var startTime = null;
+const navMenu = document.querySelector(".navbar ul");
+const navLinks = document.querySelector(".navbar a");
 
-    function animation(currentTime){
-        if(startTime === null) startTime = currentTime;
-        var timeElapsed = currentTime - startTime;
-        var run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if(timeElapsed < duration) requestAnimationFrame(animation);
-    }
+// navbarLinks.array.forEach(elem => elem.addEventListener("click", navbarLinkClink));
 
-    function ease(t, b, c, d){
-        t /= d/2;
-        if(t < 1) return c/2*t*t+b;
-        t--;
-        return -c/2*(t*(t-2)-1)+b;
-    }
-    
-    requestAnimationFrame(animation);
+// Approach 1
+
+function smoothScroll(event){
+    event.preventDefault();
+    const targetID = event.currentTarget.getAttribute("href");
+    window.scrollTo({
+        top: targetID==="#" ? 0 : document.querySelector(targetID).offsetTop,
+        behavior: "smooth"
+    })
 }
-
-smoothScroll('#home', 1000);
