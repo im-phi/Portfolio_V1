@@ -1,9 +1,11 @@
-import { request } from "https";
+// import { request } from "https";
 
-const navMenu = document.querySelector(".navbar ul");
-const navLinks = document.querySelector(".navbar a");
+const navLinks = document.querySelectorAll("#navbar a");
 
-// navbarLinks.array.forEach(elem => elem.addEventListener("click", navbarLinkClink));
+// navLinks.forEach(elem => elem.addEventListener("click", smoothScroll));
+
+navLinks[0].addEventListener("click", smoothScroll);
+navLinks[1].addEventListener("click", smoothScroll);
 
 // Approach 1
 
@@ -13,5 +15,5 @@ function smoothScroll(event){
     window.scrollTo({
         top: targetID==="#" ? 0 : document.querySelector(targetID).offsetTop,
         behavior: "smooth"
-    })
+    });
 }
